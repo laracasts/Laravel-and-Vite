@@ -22,5 +22,6 @@
                 class="object-fill h-96"
                 src="{{ Vite::image('logo.png')}}" alt="">
         </div>
+        <script></script>
     </body>
 </html>
