@@ -1,7 +1,6 @@
 <?php
 
-it('returns a successful response', function () {
-    $response = $this->get('/');
-
-    $response->assertStatus(200);
+it('see Laracasts in welcome view', function () {
+    // $this->withoutVite();
+    $this->view('welcome')->assertSee('Laracasts');
 });
