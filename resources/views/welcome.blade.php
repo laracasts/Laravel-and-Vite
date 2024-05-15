@@ -6,7 +6,13 @@
 
         <title>Laravel</title>
 
-        @vite(['resources/js/app.js'])
+        {{
+            Vite::withEntryPoints(['resources/js/app.js'])
+                ->useHotFile('storage/vite.hot')
+                ->useBuildDirectory('bundle')
+                ->useManifestFilename('assets.json');
+        }}
+        
     </head>
     <body class="bg-slate-900 text-slate-400">
         <div class="text-center pt-10">

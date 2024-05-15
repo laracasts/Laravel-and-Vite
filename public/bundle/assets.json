@@ -1,0 +1,15 @@
+{
+  "resources/images/logo.png": {
+    "file": "assets/logo-BIOvK9xu.png",
+    "src": "resources/images/logo.png"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-DV2icYg_.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app-DJyIgeTq.css"
+    ]
+  }
+}

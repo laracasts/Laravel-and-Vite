@@ -5,6 +5,8 @@ import manifestSRI from 'vite-plugin-manifest-sri';
 export default defineConfig({
     plugins: [
         laravel({
+            buildDirectory: 'bundle',
+            hotFile: 'storage/vite.hot',
             input: [
                 // 'resources/css/app.css', 
                 'resources/js/app.js',
@@ -13,6 +15,9 @@ export default defineConfig({
         }),
         manifestSRI(),
     ],
+    build: {
+        manifest: 'assets.json',
+    },
     resolve : {
         alias: {
             '@comps': '/resources/js/components',
